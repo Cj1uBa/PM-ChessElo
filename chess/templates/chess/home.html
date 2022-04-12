@@ -1,0 +1,13 @@
+{% extends "users/base.html" %}
+{% block content %}
+    <div class="cover-container d-flex h-100 p-5 text-center flex-column">
+        <img class="mx-auto d-block" width="350" height="200" src="/static/chess/logo.png">
+        <main role="main" class="inner cover mx-auto">
+            <p class="lead">Проверь себя в шахматах!</p>
+            <p class="lead">
+                <div class="main-btn"><a href="{% url 'create' %}" class="btn btn-lg btn-secondary bg-dark">Играть с другом</a></div>
+                <div class="main-btn"><a href="" class="btn btn-lg btn-secondary bg-dark disabled">Найти игру</a></div>              
+            </p>
+        </main>
+    </div>
+{% endblock content %}
